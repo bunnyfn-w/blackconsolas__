@@ -158,6 +158,34 @@
       background-color: #9333ea;
       transform: scale(1.05);
     }
+
+    /* Update section */
+    .updates {
+      background-color: #1a0027;
+      padding: 40px 20px;
+      margin: 20px auto;
+      max-width: 800px;
+      border-radius: 10px;
+    }
+
+    .updates h2 {
+      color: #d5aaff;
+      font-size: 2em;
+      text-align: center;
+      text-shadow: 0 0 10px #b983ff, 0 0 20px #a855f7;
+    }
+
+    .updates ul {
+      list-style-type: none;
+      padding: 0;
+    }
+
+    .updates li {
+      font-size: 1.2em;
+      color: #e0caff;
+      margin: 10px 0;
+      text-shadow: 0 0 5px rgba(255, 255, 255, 0.1);
+    }
   </style>
 </head>
 <body>
@@ -180,6 +208,37 @@
       <input type="password" id="password" placeholder="Password..." />
       <button onclick="checkPassword()">Log In</button>
     </div>
+  </div>
+
+  <!-- Updates Section -->
+  <div class="updates">
+    <h2>Latest Updates</h2>
+    <ul>
+      <li>Added new hacking tools for better functionalityWebsite Revamp – New Features and Updates!
+
+We’re excited to announce that the Black Consolas website has undergone a major revamp! 🚀
+
+What’s New?
+
+Brand New User Interface: We’ve completely redesigned the look and feel of the website for a smoother, more intuitive experience.
+
+New Tools & Features: We’ve added some exciting new hacking tools and utilities to enhance your experience.
+
+Improved Performance: Faster load times and better optimization for all users.
+
+Security Enhancements: Your safety is our priority, and we’ve implemented new security measures to ensure a more secure browsing experience.
+
+Bug Fixes: We’ve squashed some pesky bugs and improved the overall stability of the site.
+
+Stay Updated
+
+Make sure to check out our Updates section to stay informed about the latest changes and improvements. We’ll be continuously adding more tools, features, and enhancements to keep the site fresh and useful.
+
+Thank you for being part of the Black Consolas community! If you have any feedback or suggestions, feel free to reach out to us.
+
+Happy exploring! 🚀li>
+      
+    </ul>
   </div>
 
   <div class="container">
@@ -216,7 +275,7 @@
   </div>
 
   <script>
-    const passwords = ["password", "secret", "admin1"];
+    const passwords = ["password1", "secret", "abc123"];
     const logo = document.getElementById("logo");
     const modal = document.getElementById("passwordModal");
     const passwordInput = document.getElementById("password");
@@ -237,7 +296,7 @@
     function checkPassword() {
       const pass = passwordInput.value.trim();
       if (passwords.includes(pass)) {
-        window.location.href = "secret.html"; // Change this URL to the destination
+        window.location.href = "https://example-website.com"; // Change this URL to the destination
       } else {
         alert("Incorrect password!");
         passwordInput.value = "";
